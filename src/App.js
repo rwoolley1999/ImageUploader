@@ -6,7 +6,7 @@ class App extends React.Component {
     const file = document.getElementById("inputGroupFile01").files;
     const formData = new FormData();
 
-    formData.append("wav", file[0]);
+    formData.append("img", file[0]);
 
     fetch("http://localhost:5000/", {
       method: "POST",
@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="jumbotron">
-          <h1 className="display-4">Create New Playlist</h1>
+          <h1 className="display-4">Image Uploader</h1>
         </div>
         <div className="input-group mb-3">
           <div className="custom-file">
